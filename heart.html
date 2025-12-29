@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <title>Happy New Year 2026</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+  *{ margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* prevents edge clipping on small screens */
+    background-color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  button{
+    border: 2px solid #fffdef;
+    color: #fffdef;
+    background-color: transparent;
+    /* Yahan font family change ki gayi hai */
+    font-family: 'Marck Script', cursive;
+    font-size: clamp(20px, 6vw, 40px);
+    border-radius: 10px;
+    padding: clamp(10px, 3vw, 15px) clamp(20px, 8vw, 40px);
+    transition: 0.3s;
+    box-shadow: 0 0 10px #fffdef;
+    cursor: pointer;
+    outline: none;
+    max-width: 90vw;
+    white-space: nowrap;
+  }
+  button:hover {
+    filter: drop-shadow(0 0 20px #fffdef);
+    transform: scale(1.05);
+    background-color: rgba(255, 253, 239, 0.08); /* Halka sa glow background */
+  }
+  button:focus{
+    box-shadow: 0 0 0 4px rgba(255,253,239,0.12);
+  }
+  /* Small screens: allow button to wrap and fill width */
+  @media (max-width: 420px) {
+    button{
+      border-radius: 8px;
+      font-size: clamp(18px, 7vw, 28px);
+      padding: 12px 20px;
+      white-space: normal;
+      text-align: center;
+      width: 100%;
+    }
+  }
+</style>
+<body>
+    <button onclick="location.href='index.html'">
+     Click me!!!
+    </button>
+</body>
+</html>
